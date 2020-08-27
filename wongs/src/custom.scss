@@ -1,0 +1,13 @@
+// overall theme colors to match brand
+$wong-red: #BF2110;
+$wong-yellow: #F3C43E;
+$wong-black: #000000;
+$wong-jade: #52AFA4;
+
+$theme-colors: (
+    "primary": $wong-black,
+    "secondary": $wong-red,
+    "warning": $wong-yellow
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';

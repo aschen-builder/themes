@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import { TopNav, BottomNav } from './components/Navs';
+import HomeRoute from './routes/HomeRoute';
+import AboutRoute from './routes/AboutRoute';
+import InfoRoute from './routes/InfoRoute';
+import MenuRoute from './routes/MenuRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TopNav />
+      <Switch>
+        <Route exact path='/' component={HomeRoute} />
+        <Route path='/about' component={AboutRoute} />
+        <Route path='/info' component={InfoRoute} />
+        <Route path='/menu' component={MenuRoute} />
+      </Switch>
+      <BottomNav />
     </div>
   );
 }
