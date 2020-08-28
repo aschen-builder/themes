@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 
 // css imports
 import './custom.scss';
-import './components/css/HomeNav.css'
 
 ReactDOM.render(
   <Router>

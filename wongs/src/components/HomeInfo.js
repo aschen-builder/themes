@@ -6,7 +6,7 @@ import HomeNav from './HomeNav';
 export default function HomeInfo(props) {
     return (
         <div>
-            <Row className="justify-content-center text-center my-5">
+            <Row className="justify-content-center text-center my-3">
                 <Col md={5}>
                     <Logo />
                 </Col>
