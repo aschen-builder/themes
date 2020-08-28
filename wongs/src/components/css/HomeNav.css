@@ -1,0 +1,10 @@
+.home-nav-item {
+    border-color: #F3C43E !important;
+    border-width: 2px !important;
+}
+
+.home-nav-item:hover, #home-nav > .nav-item > .active {
+    font-weight: bold !important;
+    color: #BF2110 !important;
+    text-decoration: none !important;
+}

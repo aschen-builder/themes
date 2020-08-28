@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Logo from './Logo';
+import HomeNav from './HomeNav';
 
 export default function HomeInfo(props) {
     return (
@@ -9,8 +10,8 @@ export default function HomeInfo(props) {
                 <Col md={5}>
                     <Logo />
                 </Col>
-                <Col md={5}>
-                    <p>Text</p>
+                <Col md={5} className="d-flex justify-content-center align-items-end">
+                    <HomeNav />
                 </Col>
             </Row>
         </div>
